@@ -28,21 +28,38 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  animate_do: ^3.3.4
+  build_runner: ^2.4.13
   connectivity_plus: ^6.1.0
   cupertino_icons: ^1.0.8
+  dio: ^5.7.0
   firebase_core: ^3.8.0
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.6
   flutter_dotenv: ^5.2.1
   flutter_launcher_icons: ^0.13.1
+  flutter_localizations:
+    sdk: flutter
   flutter_native_splash: ^2.4.3
   flutter_screenutil: ^5.9.3
+  flutter_svg: ^2.0.16
+  freezed: ^2.5.7
+  freezed_annotation: ^2.4.4
+  get_it: ^8.0.2
+  json_annotation: ^4.9.0
+  pretty_dio_logger: ^1.4.0
+  retrofit: ^4.4.1
+  shared_preferences: ^2.3.3
   very_good_analysis: ^6.0.0
 
 dev_dependencies:
   flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
+  json_serializable: ^6.9.0
+  retrofit_generator: ^9.1.5
+ 
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -58,6 +75,11 @@ flutter:
     - .env.dev
     - .env.prod
     - assets/images/core/
+    - assets/images/admin/
+    - assets/images/customer/
+    - assets/images/svg/
+    - lang/ar.json
+    - lang/en.json
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see
@@ -87,7 +109,6 @@ flutter:
           weight: 500
         - asset: assets/fonts/english/poppins/Poppins-Regular.ttf
           weight: 400
-  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 flutter_assets:
